@@ -2,3 +2,5 @@ logger/node_modules
 logger-backend/node_modules
 *.txt
 logger-backend/dist
+logger/.angular
+logger/.vscode
