@@ -66,7 +66,6 @@ export class LoggerService {
   }
 
   exportLogsToBackend(): void {
-    console.log("Enter method");
     const logs = this.getLogs().filter((log)=>{
       const logLevel = log.split('--')[1].replace('[', '').replace(']', '').trim() as keyof typeof LoggingLevels;
       return this.isLogLevelHigherOrEqual(logLevel, this.logLevel);
