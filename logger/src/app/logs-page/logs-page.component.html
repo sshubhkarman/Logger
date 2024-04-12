@@ -1,0 +1,9 @@
+<div>
+    <h2>Logs</h2>
+    <table>
+        <tr *ngFor="let log of logs">
+            <td> {{ log }} </td>
+        </tr>
+    </table>
+    <button (click)="goBack()">Back</button>
+</div>
